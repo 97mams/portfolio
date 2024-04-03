@@ -4,23 +4,23 @@ export const Skills = () => {
             <h1 className="text-center text-white font-bold text-5xl my-5">Skills</h1>
             <div className="flex justify-around px-5 mt-10">
                 <div className="text-white">
-                    <h2 className="text-3xl">Design</h2>
+                    <h2 className="text-3xl font-bold">Design</h2>
                     <p className="my-3">figma</p>
                     <p className="my-3">bootstrap</p>
                 </div>
                 <div className="text-white">
-                    <h2 className="text-3xl">Front-end</h2>
-                    <p className="my-3">react</p>
-                    <p className="my-3">flutter</p>
+                    <h2 className="text-3xl font-bold">Front-end</h2>
+                    <p className="my-3 text-gray-200">react</p>
+                    <p className="my-3 text-gray-200">flutter</p>
                 </div>
                 <div className="text-white">
-                    <h2 className="text-3xl">Back-end</h2>
-                    <p className="my-3">Symfony</p>
-                    <p className="my-3">Node</p>
+                    <h2 className="text-3xl font-bold">Back-end</h2>
+                    <p className="my-3 text-gray-200">Symfony</p>
+                    <p className="my-3 text-gray-200">Node</p>
                 </div>
                 <div className="text-white">
-                    <h2 className="text-3xl">Other</h2>
-                    <p className="my-3">git & github</p>
+                    <h2 className="text-3xl font-bold">Other</h2>
+                    <p className="my-3 text-gray-200">git & github</p>
                 </div>
 
             </div>
