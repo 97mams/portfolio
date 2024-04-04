@@ -1,3 +1,5 @@
+import { GitHubLogoIcon } from '@radix-ui/react-icons'
+
 export const Projects = () => {
     return <div className="px-20" id="projects">
         <h1 className="text-5xl text-white text-center font-bold my-10">Projects</h1>
@@ -5,9 +7,17 @@ export const Projects = () => {
             <div className=" text-white p-5 bg-blue-900 rounded-2xl">
                 <div className="text-xl font-bold">Toro-Sakafo</div>
                 <p className="my-3 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque expedita qui illo sint esse fuga labore error </p>
-                <a className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full">symfony</a>
-                <a className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full">Mysql</a>
-                <a className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full">Twig</a>
+                <div className='flex'>
+                    <div className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full flex items-center">
+                        <GitHubLogoIcon />symfony
+                    </div>
+                    <div className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full flex">
+                        <GitHubLogoIcon />symfony
+                    </div>
+                    <div className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full flex">
+                        <GitHubLogoIcon />symfony
+                    </div>
+                </div>
             </div>
             <div className=" text-white p-5 bg-blue-900 rounded-2xl">
                 <div className="text-xl font-bold">Lettre récommander</div>
@@ -24,5 +34,5 @@ export const Projects = () => {
                 <a className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full">tailwind</a>
             </div>
         </div>
-    </div>
+    </div >
 }

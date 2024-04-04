@@ -1,3 +1,5 @@
+import { GitHubLogoIcon, FigmaLogoIcon } from '@radix-ui/react-icons'
+
 export const Skills = () => {
     return <>
         <div className="w-full pb-20 border-gray-100" id="skills">
@@ -10,7 +12,10 @@ export const Skills = () => {
                 </div>
                 <div className="text-white">
                     <h2 className="text-3xl font-bold">Front-end</h2>
-                    <p className="my-3 text-gray-200">react</p>
+                    <div className="flex">
+                        <GitHubLogoIcon />
+                        <p className="my-3 text-gray-200">react</p>
+                    </div>
                     <p className="my-3 text-gray-200">flutter</p>
                 </div>
                 <div className="text-white">
