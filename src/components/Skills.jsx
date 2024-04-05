@@ -1,6 +1,7 @@
 import { GitHubLogoIcon, FigmaLogoIcon } from '@radix-ui/react-icons'
 
 export const Skills = () => {
+    console.log("skills");
     return <>
         <div className="w-full pb-20 border-gray-100" id="skills">
             <h1 className="text-center text-white font-bold text-5xl my-5">Skills</h1>
