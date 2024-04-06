@@ -10,6 +10,7 @@ export const Projects = (project) => {
                 <motion.div
                     className="cursor-pointer"
                     whileHover={{ scale: 1.1 }}
+                    key={project.title}
                 >
                     <div className=" text-white p-5 bg-blue-900 rounded-2xl">
                         <div className="text-xl font-bold">{project.title}</div>

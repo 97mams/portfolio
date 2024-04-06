@@ -3,11 +3,20 @@
         "firstname": "RATSIMBARISON",
         "lastname": "Anjaniaina Mamisoa",
         "adress": "lot Ano o6 Antsampandrano",
-        "contacts": {
-            "tel": "038 16 574 55",
-            "email": "anjaniainamamisoa@gmail.com",
-            "git": "mams97"
-        },
+        "contacts": [
+            {
+                "key": "038 16 574 55",
+                "value": "#"
+            },
+            {
+                "key": "git",
+                "value": "97mams"
+            },
+            {
+                "key": "email",
+                "value": "anjaniainamamisoa@gmail.com"
+            }
+        ],
         "educations": [
             {
                 "degree": "License en informatique",

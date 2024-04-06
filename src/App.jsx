@@ -17,11 +17,13 @@ export default function App() {
       .catch(e => console.log(e))
   }, [])
 
+  console.log(information);
+
   return <div className="w-full min-h-screen bg-blue-950 pt-5 px-20">
     {information.map(info => (
       <div>
         <Header></Header>
-        <About></About>
+        <About name={info.firstname} lastName={info.lastname} contact={info.contacts} ></About>
         <Skills></Skills>
         <Projects projects={info.projects}></Projects>
         <Courses></Courses>
