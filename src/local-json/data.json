@@ -1,0 +1,87 @@
+[
+    {
+        "firstname": "RATSIMBARISON",
+        "lastname": "Anjaniaina Mamisoa",
+        "adress": "lot Ano o6 Antsampandrano",
+        "contacts": {
+            "tel": "038 16 574 55",
+            "email": "anjaniainamamisoa@gmail.com",
+            "git": "mams97"
+        },
+        "educations": [
+            {
+                "degree": "License en informatique",
+                "school": "ISIME Madagascar",
+                "year": "2023"
+            },
+            {
+                "degree": "DTC en informatique",
+                "school": "ISIME Madagascar",
+                "year": "202"
+            },
+            {
+                "degree": "baccalaureat",
+                "school": "LP MASCA Sab/Nam",
+                "year": "2016"
+            }
+        ],
+        "formation": [
+            {
+                "techno": "Full javascript",
+                "school": "DTC ou Digitale Trainning Center",
+                "duration": "octobre 2023 à décembre 2023"
+            },
+            {
+                "techno": "initiation developpement web",
+                "school": "DTC ou Digitale Trainning Center",
+                "duration": "juillet 2023 à septembre 2023"
+            }
+        ],
+        "experience": {
+            "stage": [
+                {
+                    "company": "Paositra Malagasy",
+                    "duration": "septembre 2023 à décembre 2023",
+                    "poste": "developpeur web",
+                    "techno": "react, node, electron",
+                    "decription": "Créer une application pour suivir les lettre recommandés"
+                },
+                {
+                    "company": "R@ndevTeam",
+                    "duration": "septembre 2023 à décembre 2023",
+                    "poste": "developpeur mobile",
+                    "techno": "react native",
+                    "decription": "maintenance et création des interface utilisateur d'une application sortez-mobil"
+                }
+            ]
+        },
+        "projects": [
+            {
+                "title": "Toro-Sakafo",
+                "description": "Project for practice symfony 7",
+                "stack": [
+                    "symfony",
+                    "bootstrap",
+                    "twig"
+                ]
+            },
+            {
+                "title": "Lettre récommander",
+                "description": "lorem impsum dolor",
+                "stack": [
+                    "react",
+                    "electron",
+                    "express"
+                ]
+            },
+            {
+                "title": "Livre d'or",
+                "description": "systeme pour mettre l'à vie d'utilisateur",
+                "stack": [
+                    "php",
+                    "tailwind"
+                ]
+            }
+        ]
+    }
+]
