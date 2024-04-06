@@ -4,14 +4,30 @@ import { Skills } from "./components/Skills.jsx";
 import { Projects } from "./components/Projects.jsx";
 import { Courses } from "./components/Courses.jsx";
 import { Footer } from "./components/Footer.jsx";
+import axios, { Axios } from "axios";
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const [information, setInformation] = useState([])
+
+  useEffect(() => {
+    axios
+      .get("./src/local-json/data.json")
+      .then(response => setInformation(response.data))
+      .catch(e => console.log(e))
+  }, [])
+
   return <div className="w-full min-h-screen bg-blue-950 pt-5 px-20">
-    <Header></Header>
-    <About></About>
-    <Skills></Skills>
-    <Projects></Projects>
-    <Courses></Courses>
-    <Footer></Footer>
+    {information.map(info => (
+      <div>
+        <Header></Header>
+        <About></About>
+        <Skills></Skills>
+        <Projects projects={info.projects}></Projects>
+        <Courses></Courses>
+        <Footer></Footer>
+      </div>
+    ))}
+
   </div>
 }
