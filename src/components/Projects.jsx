@@ -13,6 +13,7 @@ export const Projects = (project) => {
                     key={project.title}
                 >
                     <div className=" text-white p-5 bg-blue-900 rounded-2xl">
+                        <div className="flex justify-end"><GitHubLogoIcon /></div>
                         <div className="text-xl font-bold">{project.title}</div>
                         <p className="my-3 text-gray-200">{project.description}</p>
                         <div className='flex'>

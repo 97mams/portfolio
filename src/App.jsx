@@ -19,7 +19,7 @@ export default function App() {
 
   console.log(information);
 
-  return <div className="w-full min-h-screen bg-blue-950 pt-5 px-20">
+  return <div className="w-full min-h-screen bg-blue-950 pt-5 px-20 pb-28">
     {information.map(info => (
       <div>
         <Header></Header>

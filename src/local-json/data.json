@@ -6,7 +6,8 @@
         "contacts": [
             {
                 "key": "038 16 574 55",
-                "value": "#"
+                "value": "#",
+                "icon": ""
             },
             {
                 "key": "git",
