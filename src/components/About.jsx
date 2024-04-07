@@ -1,7 +1,8 @@
-
+import { motion } from "framer-motion"
 
 export function About({ name, lastName, contact }) {
     const lastNameArray = lastName.split(" ")
+    console.log(contact);
     return <div className="flex min-h-screen items-center justify-around">
         <div>
             <p className="text-blue-500 mb-4">Hey ther! I'm- </p>
@@ -13,8 +14,12 @@ export function About({ name, lastName, contact }) {
                 ))}
             </div>
         </div>
-        <div>
-            <img src="./src/assets/mamisoa1.jpeg" className="w-[200px] h-[200px] ms:object-none rounded-full" />
-        </div>
+        <motion.div
+            whileHover={{ scale: 1.1, rotate: 15 }}
+
+        >
+            <img src="./src/assets/mamisoa.jpeg" className="w-[200px] h-[200px] bg-violet-900 rounded-full" alt="" />
+
+        </motion.div>
     </div>
 }

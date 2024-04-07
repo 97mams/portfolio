@@ -6,7 +6,6 @@ import { Courses } from "./components/Courses.jsx";
 import { Footer } from "./components/Footer.jsx";
 import axios, { Axios } from "axios";
 import { useEffect, useState } from "react";
-import { Contact } from "./components/Contact.jsx";
 
 export default function App() {
   const [information, setInformation] = useState([])
@@ -28,7 +27,6 @@ export default function App() {
         <Skills></Skills>
         <Projects projects={info.projects}></Projects>
         <Courses></Courses>
-        <Contact></Contact>
         <Footer></Footer>
       </div>
     ))}
