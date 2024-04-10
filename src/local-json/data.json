@@ -11,11 +11,11 @@
             },
             {
                 "key": "git",
-                "value": "97mams"
+                "value": "https://github.com/97mams"
             },
             {
                 "key": "email",
-                "value": "anjaniainamamisoa@gmail.com"
+                "value": "mailto:anjaniainamamisoa@gmail.com"
             }
         ],
         "educations": [
@@ -73,7 +73,8 @@
                     "symfony",
                     "bootstrap",
                     "twig"
-                ]
+                ],
+                "link": "https://github.com/97mams/toroSakafo"
             },
             {
                 "title": "Lettre récommander",
@@ -82,7 +83,8 @@
                     "react",
                     "electron",
                     "express"
-                ]
+                ],
+                "link": "https://github.com/NekrozXD/RCMD"
             },
             {
                 "title": "Livre d'or",
@@ -90,7 +92,8 @@
                 "stack": [
                     "php",
                     "tailwind"
-                ]
+                ],
+                "link": "https://github.com/97mams/goldBook"
             }
         ]
     }

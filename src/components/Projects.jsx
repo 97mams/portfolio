@@ -40,7 +40,8 @@ export const Projects = (project) => {
         >Projects</motion.h1>
         <div className="flex gap-10 justify-around pb-20 px-5">
             {project.projects.map((project) => (
-                <motion.div
+                <motion.a
+                    target="_blank"
                     className="cursor-pointer"
                     ref={ref}
                     variants={boxVariant}
@@ -48,6 +49,7 @@ export const Projects = (project) => {
                     animate={control}
                     key={project.title}
                     whileHover={{ scale: 1.1 }}
+                    href={project.link}
                 >
                     <div className=" text-white p-5 bg-blue-900 rounded-2xl">
                         <div className="text-xl font-bold">{project.title}</div>
@@ -60,7 +62,7 @@ export const Projects = (project) => {
                             ))}
                         </div>
                     </div>
-                </motion.div>
+                </motion.a>
             ))
 
             }

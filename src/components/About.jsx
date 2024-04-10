@@ -33,7 +33,12 @@ export function About({ name, lastName, contact }) {
             <p className="text-white"><span className="font-bold text-xl">Lorem ipsum dolor sit</span>, amet consectetur adipisicing elit. Sapiente esse.</p>
             <div className="py-3">
                 {contact.map(contact => (
-                    <a href="{contact.value}" key={contact.key} className="bg-blue-500 mr-3 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">{contact.key}</a>
+                    <a
+                        target="_blank"
+                        href={contact.value}
+                        key={contact.key}
+                        className="bg-blue-500 mr-3 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                    >{contact.key}</a>
                 ))}
             </div>
         </div>
