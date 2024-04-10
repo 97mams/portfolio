@@ -1,9 +1,32 @@
-import { motion } from "framer-motion"
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
+const boxVariant = {
+    visible: { opacity: 1, y: 10, transition: { duration: 0.7 } },
+    hidden: { opacity: 0, y: 0 }
+};
 export function About({ name, lastName, contact }) {
     const lastNameArray = lastName.split(" ")
     console.log(contact);
-    return <div className="flex min-h-screen items-center justify-around">
+
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        } else {
+            control.start("hidden");
+        }
+    }, [control, inView]);
+    return <motion.div
+        className="flex min-h-screen items-center justify-around"
+        ref={ref}
+        variants={boxVariant}
+        initial="hidden"
+        animate={control}
+    >
         <div>
             <p className="text-blue-500 mb-4">Hey ther! I'm- </p>
             <h1 className="text-blue-500 font-bold text-6xl mb-4">{name} <br /> {lastNameArray[0]} <br /> {lastNameArray[1]} </h1>
@@ -14,12 +37,9 @@ export function About({ name, lastName, contact }) {
                 ))}
             </div>
         </div>
-        <motion.div
-            whileHover={{ scale: 1.1, rotate: 15 }}
-
-        >
+        <div>
             <img src="./src/assets/mamisoa.jpeg" className="w-[200px] h-[200px] bg-violet-900 rounded-full" alt="" />
 
-        </motion.div>
-    </div>
+        </div>
+    </motion.div>
 }

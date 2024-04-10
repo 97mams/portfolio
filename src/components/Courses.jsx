@@ -1,9 +1,18 @@
 import { HomeIcon } from "@radix-ui/react-icons"
+import { motion } from "framer-motion"
 
 export const Courses = () => {
     return <div className="px-20" id="courses">
-        <h1 className="text-5xl text-white text-center font-bold my-10">Courses</h1>
-        <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+        <motion.h1
+            className="text-5xl text-white text-center font-bold my-10"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
+        >Courses</motion.h1>
+        <motion.div
+            className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}
+        >
             <div className="flex items-start gap-4">
                 <span className="shrink-0 rounded-lg text-white border border-blue-900 p-4">
                     <svg
@@ -204,6 +213,6 @@ export const Courses = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </div>
 }

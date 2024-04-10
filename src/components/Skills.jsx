@@ -1,11 +1,21 @@
 import { GitHubLogoIcon, FigmaLogoIcon } from '@radix-ui/react-icons'
+import { InView } from "react-intersection-observer"
+import { motion, useAnimation } from "framer-motion"
 
 export const Skills = () => {
-    console.log("skills");
+    const control = useAnimation()
     return <>
         <div className="w-full pb-20 border-gray-100" id="skills">
-            <h1 className="text-center text-white font-bold text-5xl my-5">Skills</h1>
-            <div className="flex justify-around px-5 mt-10">
+            <motion.h1
+                className="text-center text-white font-bold text-5xl my-5"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
+            >Skills</motion.h1>
+            <motion.div
+                className="flex justify-around px-5 mt-10"
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}
+            >
                 <div className="text-white">
                     <h2 className="text-3xl font-bold">Design</h2>
                     <p className="my-3">figma</p>
@@ -29,7 +39,7 @@ export const Skills = () => {
                     <p className="my-3 text-gray-200">git & github</p>
                 </div>
 
-            </div>
+            </motion.div>
         </div>
     </>
 }
