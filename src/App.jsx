@@ -23,10 +23,18 @@ export default function App() {
   return <div className="w-full min-h-screen bg-blue-950 pt-5 px-20 pb-28">
     {information.map(info => (
       <div>
-        <Header></Header>
-        <About name={info.firstname} lastName={info.lastname} contact={info.contacts} descripiton={info.description} ></About>
-        <Skills skills={info.skills} ></Skills>
-        <Projects projects={info.projects}></Projects>
+        <Header profil={info.profil}></Header>
+        <About
+          name={info.firstname}
+          lastName={info.lastname}
+          contact={info.contacts}
+          descripiton={info.description} ></About>
+        <Skills
+          skills={info.skills}
+        ></Skills>
+        <Projects
+          projects={info.projects}
+        ></Projects>
         <Courses></Courses>
         <Contact></Contact>
         <Footer></Footer>

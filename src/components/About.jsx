@@ -14,7 +14,7 @@ export function About({ name, lastName, contact, descripiton }) {
         animate={boxVariant}
         whileInView="visible"
     >
-        <div className="px-20  bg-[url('./assets/29726227_7601783.svg')] bg-contain">
+        <div className="px-20">
 
             <p className="text-blue-500 ">Hey ther! I'm- </p>
             <h1 className="text-blue-500 font-bold text-6xl mb-4">{name} <br /> {lastNameArray[0]} <br /> {lastNameArray[1]} </h1>
