@@ -16,7 +16,7 @@ export const Projects = (project) => {
     const control = useAnimation();
     const [ref, inView] = useInView();
 
-    console.log(inView);
+    console.log(project);
 
     useEffect(() => {
         if (inView) {

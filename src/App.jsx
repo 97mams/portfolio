@@ -25,7 +25,7 @@ export default function App() {
       <div>
         <Header></Header>
         <About name={info.firstname} lastName={info.lastname} contact={info.contacts} descripiton={info.description} ></About>
-        <Skills></Skills>
+        <Skills skills={info.skills} ></Skills>
         <Projects projects={info.projects}></Projects>
         <Courses></Courses>
         <Contact></Contact>

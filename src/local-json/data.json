@@ -97,19 +97,34 @@
                 "link": "https://github.com/97mams/goldBook"
             }
         ],
-        "skills": {
-            "Design": [
-                "figma",
-                "bootstrap"
-            ],
-            "Front-end": [
-                "react",
-                "flutter"
-            ],
-            "Back-end": [
-                "symfony",
-                "nodejs"
-            ]
-        }
+        "skills": [
+            {
+                "title": "Design",
+                "contents": [
+                    "figma",
+                    "bootstrap"
+                ]
+            },
+            {
+                "title": "Front-end",
+                "contents": [
+                    "react",
+                    "flutter"
+                ]
+            },
+            {
+                "title": "Back-end",
+                "contents": [
+                    "symfony",
+                    "nodejs"
+                ]
+            },
+            {
+                "title": "other",
+                "contents": [
+                    "git & github"
+                ]
+            }
+        ]
     }
 ]
