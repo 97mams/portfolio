@@ -27,18 +27,17 @@ export const Projects = (project) => {
     }, [control, inView]);
 
     return <div
-        className="px-20"
+        className="px-20 w-full mt-20 h-70 flex flex-col items-center justify-center"
         id="projects"
-
     >
         <motion.h1
-            className="text-5xl text-white text-center font-bold my-10"
+            className="text-5xl text-white text-center font-bold mb-10"
             ref={ref}
             variants={titleVariant}
             initial="hidden"
             animate={control}
         >Projects</motion.h1>
-        <div className="flex gap-10 justify-around pb-20 px-5">
+        <div className="flex gap-10 justify-around px-5">
             {project.projects.map((project) => (
                 <motion.a
                     target="_blank"

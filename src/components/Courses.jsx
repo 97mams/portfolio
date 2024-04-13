@@ -2,7 +2,7 @@ import { HomeIcon } from "@radix-ui/react-icons"
 import { motion } from "framer-motion"
 
 export const Courses = () => {
-    return <div className="px-20" id="courses">
+    return <div className="w-full flex flex-col h-50 mt-20 items-center justify-center " id="courses">
         <motion.h1
             className="text-5xl text-white text-center font-bold my-10"
             initial={{ opacity: 0 }}

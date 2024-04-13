@@ -1,6 +1,12 @@
+import { motion } from "framer-motion"
+
 export const Contact = function () {
     return <>
-        <div className="w-full borde mt-20 px-28 flex flex-col items-center">
+        <motion.div
+            className="w-full borde mt-20 px-28 flex flex-col items-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+        >
             <h1 className="text-5xl text-white text-center font-bold my-10">Contact</h1>
             <div className="w-[500px]">
                 <form method="post">
@@ -31,6 +37,6 @@ export const Contact = function () {
                     <button type="submit" className="text-white mt-4 bg-blue-900 px-3 py-2 rounded-md">send</button>
                 </form>
             </div>
-        </div>
+        </motion.div>
     </>
 }

@@ -4,6 +4,7 @@ import { Skills } from "./components/Skills.jsx";
 import { Projects } from "./components/Projects.jsx";
 import { Courses } from "./components/Courses.jsx";
 import { Footer } from "./components/Footer.jsx";
+import { Contact } from "./components/Contact.jsx"
 import axios, { Axios } from "axios";
 import { useEffect, useState } from "react";
 
@@ -23,10 +24,11 @@ export default function App() {
     {information.map(info => (
       <div>
         <Header></Header>
-        <About name={info.firstname} lastName={info.lastname} contact={info.contacts} ></About>
+        <About name={info.firstname} lastName={info.lastname} contact={info.contacts} descripiton={info.description} ></About>
         <Skills></Skills>
         <Projects projects={info.projects}></Projects>
         <Courses></Courses>
+        <Contact></Contact>
         <Footer></Footer>
       </div>
     ))}
