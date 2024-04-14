@@ -50,7 +50,6 @@ const skill = [
 
 export const Skills = ({ skills }) => {
     const [icon, setIcon] = useState(skill)
-
     console.log(icon);
     return <>
         <div className="w-full h-50 mt-20 flex items-center justify-center flex-col border-gray-100" id="skills">
