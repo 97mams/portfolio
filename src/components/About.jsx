@@ -47,7 +47,6 @@ export function About({ name, lastName, contact, descripiton }) {
                         className="flex items-center gap-2 justify-center bg-blue-500 mr-3 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                     >
                         {contact.icon} {contact.title}
-
                     </a>
                 ))}
             </div>

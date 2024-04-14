@@ -1,30 +1,6 @@
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
-const boxVariant = {
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-    hidden: { opacity: 0, y: 50 }
-};
-
-const titleVariant = {
-    visible: { opacity: 1, transition: { duration: 0.5 } },
-    hidden: { opacity: 0 }
-}
+import { motion } from "framer-motion";
 
 export const Projects = (project) => {
-    const control = useAnimation();
-    const [ref, inView] = useInView();
-
-    console.log(project);
-
-    useEffect(() => {
-        if (inView) {
-            control.start("visible");
-        } else {
-            control.start("hidden");
-        }
-    }, [control, inView]);
 
     return <div
         className="px-20 w-full mt-20 h-70 flex flex-col items-center justify-center"
@@ -32,22 +8,17 @@ export const Projects = (project) => {
     >
         <motion.h1
             className="text-5xl text-white text-center font-bold mb-10"
-            ref={ref}
-            variants={titleVariant}
-            initial="hidden"
-            animate={control}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
         >Projects</motion.h1>
         <div className="flex gap-10 justify-around px-5">
             {project.projects.map((project) => (
                 <motion.a
                     target="_blank"
                     className="cursor-pointer"
-                    ref={ref}
-                    variants={boxVariant}
-                    initial="hidden"
-                    animate={control}
+                    initial={{ y: 100 }}
+                    whileInView={{ y: 0, transition: { duration: 0.5 } }}
                     key={project.title}
-                    whileHover={{ scale: 1.1 }}
                     href={project.link}
                 >
                     <div className=" text-white p-5 bg-blue-900 rounded-2xl">
