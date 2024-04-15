@@ -55,8 +55,11 @@ export function About({ name, lastName, contact, descripiton }) {
                 ))}
             </div>
         </motion.div>
-        <div>
+        <motion.div
+            initial={{ x: 200 }}
+            animate={{ x: 0, transition: { duration: 0.3 } }}
+        >
             <img src="./src/assets/mamisoa.jpeg" className="w-[200px] h-[200px] bg-violet-900 rounded-full" alt="" />
-        </div>
+        </motion.div>
     </motion.div>
 }
