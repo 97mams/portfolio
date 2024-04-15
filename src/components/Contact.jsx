@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { FaFlushed } from "react-icons/fa"
 
 export const Contact = function () {
     return <>
@@ -34,7 +35,9 @@ export const Contact = function () {
                         <label htmlFor="message" className="text-white">Message</label>
                         <textarea name="message" id="message" rows="10" className="bg-gray-200 p-1 rounded-md" placeholder="Hey !"></textarea>
                     </div>
-                    <button type="submit" className="text-white mt-4 bg-blue-900 px-3 py-2 rounded-md">send</button>
+                    <button type="submit" className="text-white mt-4 bg-blue-900 px-3 py-2 rounded-md">
+                        send
+                    </button>
                 </form>
             </div>
         </motion.div>

@@ -23,7 +23,7 @@ const contactWithIcon = (contact) => {
 }
 export function About({ name, lastName, contact, descripiton }) {
 
-    const [contactButton, setBontactButton] = useState(contactWithIcon(contact))
+    const [contactButton, setContactButton] = useState(contactWithIcon(contact))
 
     const lastNameArray = lastName.split(" ")
 
@@ -33,7 +33,11 @@ export function About({ name, lastName, contact, descripiton }) {
         animate={boxVariant}
         whileInView="visible"
     >
-        <div className="px-20">
+        <motion.div
+            className="px-20"
+            initial={{ x: -200 }}
+            animate={{ x: 0, transition: { duration: 0.3 } }}
+        >
 
             <p className="text-blue-500 ">Hey ther! I'm- </p>
             <h1 className="text-blue-500 font-bold text-6xl mb-4">{name} <br /> {lastNameArray[0]} <br /> {lastNameArray[1]} </h1>
@@ -50,10 +54,9 @@ export function About({ name, lastName, contact, descripiton }) {
                     </a>
                 ))}
             </div>
-        </div>
+        </motion.div>
         <div>
             <img src="./src/assets/mamisoa.jpeg" className="w-[200px] h-[200px] bg-violet-900 rounded-full" alt="" />
-
         </div>
     </motion.div>
 }

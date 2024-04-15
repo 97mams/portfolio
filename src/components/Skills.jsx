@@ -59,7 +59,7 @@ export const Skills = ({ skills }) => {
                 whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
             >Skills</motion.h1>
             <motion.div
-                className="w-full flex justify-around pb-5"
+                className="w-full flex justify-around"
                 initial={{ y: 100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}
             >

@@ -72,8 +72,7 @@
                 "description": "Project for practice symfony 7",
                 "stack": [
                     "symfony",
-                    "bootstrap",
-                    "twig"
+                    "bootstrap"
                 ],
                 "link": "https://github.com/97mams/toroSakafo"
             },
