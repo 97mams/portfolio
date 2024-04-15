@@ -1,5 +1,5 @@
-import { HomeIcon } from "@radix-ui/react-icons"
 import { motion } from "framer-motion"
+import { FaHome } from "react-icons/fa"
 
 export const Courses = () => {
     return <div className="w-full flex flex-col h-50 mt-20 pt-10 items-center justify-center " id="courses">
@@ -38,7 +38,7 @@ export const Courses = () => {
                 <div>
                     <h2 className="text-lg font-bold text-white">Formation full-js</h2>
                     <div className="text-white flex items-center gap-1">
-                        <HomeIcon /> <p>Degital Training Center (DTC)</p>
+                        <FaHome /> <p>Degital Training Center (DTC)</p>
                     </div>
                     <p className="mt-1 text-sm text-gray-300">
                         Learning javascript language
@@ -108,11 +108,10 @@ export const Courses = () => {
                         ></path>
                     </svg>
                 </span>
-
                 <div>
                     <h2 className="text-lg font-bold text-white">Formation Dev web</h2>
                     <div className="text-white flex items-center gap-1">
-                        <HomeIcon /> <p>Degital Training Center (DTC)</p>
+                        <FaHome /> <p>Degital Training Center (DTC)</p>
                     </div>
                     <p className="mt-1 text-sm text-gray-300">
                         Learning basic for web development
@@ -206,7 +205,7 @@ export const Courses = () => {
                 <div>
                     <h2 className="text-lg font-bold text-white">Licence</h2>
                     <div className="text-white flex items-center gap-1">
-                        <HomeIcon /> <p>SIME Madagascar</p>
+                        <FaHome /> <p>SIME Madagascar</p>
                     </div>
                     <p className="mt-1 text-sm text-gray-300">
                         Degree in software engineering
