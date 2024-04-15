@@ -18,6 +18,7 @@ export const Projects = (project) => {
                     className="cursor-pointer"
                     initial={{ y: 100 }}
                     whileInView={{ y: 0, transition: { duration: 0.5 } }}
+                    whileHover={{ scale: 1.1 }}
                     key={project.title}
                     href={project.link}
                 >
@@ -26,7 +27,7 @@ export const Projects = (project) => {
                         <p className="my-3 text-gray-200">{project.description}</p>
                         <div className='flex'>
                             {project.stack.map(element => (
-                                < div className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full flex items-center gatp-1" >
+                                < div key={element} className="bg-blue-500 mr-3 text-gray-900 font-bold py-1 px-2 rounded-full flex items-center gatp-1" >
                                     {element}
                                 </div>
                             ))}

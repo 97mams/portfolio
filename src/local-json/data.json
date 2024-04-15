@@ -78,7 +78,7 @@
             },
             {
                 "title": "Lettre récommander",
-                "description": "lorem impsum dolor",
+                "description": "Suivi lettre récommander",
                 "stack": [
                     "react",
                     "electron",
